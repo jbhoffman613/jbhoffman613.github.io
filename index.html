@@ -5,96 +5,129 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Josh Hoffman's Personal Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Personal website belonging to Josh Hoffman who is a PhD student studying computer science, robotics, and AI at UT Austin">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Josh Hoffman's Personal Website</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description"
+		content="Personal website belonging to Josh Hoffman who is a PhD student studying computer science, robotics, and AI at UT Austin">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<style>
+		.be-header {
+			position: absolute;
+			top: 20px;
+			right: 30px;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 1.2em;
+			color: #fff;
+			/* fallback, will be overridden below */
+			z-index: 1000;
+			letter-spacing: 0.05em;
+		}
 
-				<!-- Header -->
-					<header id="header" class="alt">
-							<span class="logo">
-								<a href="index.html">
-									<img href="index.html" src="images/logo.svg" alt="" />
-								</a>
-							</span>
-							<h1>Josh Hoffman</h1>
-							<p>Researching AI and Robotics at UT Austin</p>
-					</header>
+		/* Match the color of the title (h1) */
+		header#header.alt h1 {
+			color: inherit;
+		}
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Who I Am</a></li>
-							<li><a href="#first">Research</a></li>
-							<li><a href="#service">Service</a></li>
-							<!-- <li><a href="#cta">Get Started</a></li> -->
+		.be-header {
+			color: inherit;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+	<div class="be-header">ב"ה</div>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<span class="logo">
+				<a href="index.html">
+					<img href="index.html" src="images/logo.svg" alt="" />
+				</a>
+			</span>
+			<h1>Josh Hoffman</h1>
+			<p>AI Engineer and Consultant</p>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul>
+				<li><a href="#intro" class="active">Who I Am</a></li>
+				<li><a href="#first">Research</a></li>
+				<li><a href="#service">Service</a></li>
+				<!-- <li><a href="#cta">Get Started</a></li> -->
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Introduction -->
+			<section id="intro" class="main">
+				<div class="spotlight">
+					<div class="content">
+						<header class="major">
+							<h2>It's Me, Josh!</h2>
+						</header>
+						<p>I recently graduated from The University of Texas at Austin where I researched and worked on
+							everything from reinforcement learning, Safe AI, program synthesis, robotics, multi-agent
+							LLMs, and neuro-symbolic programming. A highlight of my time in grad school was developing
+							and teaching a course on safe and trustworthy machine learning.</p>
+						<p>I am now working on a secret project as an AI engineer and consultant spanning multiple
+							languages. It has already been an incredible journey working with multiple stakeholders
+							literally spanning the globe, and the team is excited what is coming in the near future.
+							Stay tuned for some very exciting developments!</p>
+						<p>Additionally, I am a proud alum of Northeastern University Khoury College and CCIS.</p>
+						<ul class="actions">
+							<li><a href="documents/public_resume.pdf" class="button">CV</a></li>
 						</ul>
-					</nav>
+					</div>
+					<span class="image"><img src="images/headshot.jpeg" alt="" /></span>
+				</div>
+			</section>
 
-				<!-- Main -->
-					<div id="main">
+			<!-- First Section -->
+			<section id="first" class="main special">
+				<header class="major">
+					<h2>Research</h2>
+				</header>
+				<ul class="features">
+					<li>
+						<span class="icon solid major style1 fa-code"></span>
+						<h3>Program Synthesis</h3>
+						<p>Learning frameworks that automatically generate code that can solve a series of complex tasks
+						</p>
+					</li>
+					<li>
+						<span class="icon major style3 fa-copy"></span>
+						<h3>NeuroSymbolic Programming</h3>
+						<p>Techniques that leverage the reliability and strength of formal methods in combination with
+							the power of neural networks</p>
+					</li>
+					<li>
+						<span class="icon major style5 fa-robot"></span>
+						<h3>Reinforcement Learnings</h3>
+						<p>Creating methods that learn more optimal neural policies for a variety of continuous domains
+						</p>
+					</li>
+				</ul>
+				<footer class="major">
+					<ul class="actions special">
+						<li><a href="publications.html" class="button">Publications</a></li>
+					</ul>
+				</footer>
+			</section>
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>It's Me, Josh!</h2>
-										</header>
-										<p>I am graduate student at The University of Texas
-											at Austin advised by <a href="http://www.cs.utexas.edu/~swarat/">Swarat Chaudhuri</a>.
-											I am interested in neuro-symbolic programming, program synthesis, and reinforcement learning with a 
-											focus towards question in autonomus agent cooperation, economics, and finance.</p>
-										<p> I lead the <a href="https://nsymbolic.github.io">NeuroSymbolic reading group</a>, 
-											and I am the TA for CS 378: Safe and Ethical Artificial Intelligence. Additionally, I am a
-											proud alum of Northeastern University Khoury College and CCIS.</p>
-										<ul class="actions">
-											<li><a href="documents/public_resume.pdf" class="button">CV</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/headshot.jpeg" alt="" /></span>
-								</div>
-							</section>
-
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Research</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-code"></span>
-										<h3>Program Synthesis</h3>
-										<p>Learning frameworks that automatically generate code that can solve a series of complex tasks</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-copy"></span>
-										<h3>NeuroSymbolic Programming</h3>
-										<p>Techniques that leverage the reliability and strength of formal methods in combination with the power of neural networks</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-robot"></span>
-										<h3>Reinforcement Learnings</h3>
-										<p>Creating methods that learn more optimal neural policies for a variety of continuous domains</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="publications.html" class="button">Publications</a></li>
-									</ul>
-								</footer>
-							</section>
-
-						<!-- Second Section - COMMENTED IN BLOCKS-->
-							<!-- <section id="second" class="main special">
+			<!-- Second Section - COMMENTED IN BLOCKS-->
+			<!-- <section id="second" class="main special">
 								<header class="major">
 									<h2>Extra Bits</h2>
 									<p>During my undergraduate at Northeastern, I taught CS1210</p>
@@ -102,24 +135,24 @@
 								<ul class="statistics">
 									<li class="style1">
 										<span class="icon solid fa-code-branch"></span> -->
-										<!-- <strong>5,120</strong> Etiam -->
-									<!-- </li>
+			<!-- <strong>5,120</strong> Etiam -->
+			<!-- </li>
 									<li class="style2">
 										<span class="icon fa-pen-alt"></span> -->
-										<!-- <strong>8,192</strong> Magna -->
-									<!-- </li>
+			<!-- <strong>8,192</strong> Magna -->
+			<!-- </li>
 									<li class="style3">
 										<span class="icon solid fa-signal"></span> -->
-										<!-- <strong>2,048</strong> Tempus -->
-									<!-- </li>
+			<!-- <strong>2,048</strong> Tempus -->
+			<!-- </li>
 									<li class="style4">
 										<span class="icon solid fa-laptop"></span> -->
-										<!-- <strong>4,096</strong> Aliquam -->
-									<!-- </li>
+			<!-- <strong>4,096</strong> Aliquam -->
+			<!-- </li>
 									<li class="style5">
 										<span class="icon fa-receipt"></span> -->
-										<!-- <strong>1,024</strong> Nullam -->
-									<!-- </li>
+			<!-- <strong>1,024</strong> Nullam -->
+			<!-- </li>
 								</ul>
 								<p class="content">Following the long-standing tradition of shamelessly
 								sharing my own advice as the only answer, I have a started a <i>blog</i>
@@ -134,101 +167,123 @@
 								</footer>
 							</section> -->
 
-						<!-- Get Started -->
-							<section id="service" class="main special">
-								<header class="major">
-									<h2>Service</h2>
-									<p>I am proud to lend a hand when I can</p>
-								</header>
-								<footer>
-									<div class="table-wrapper">
-										<table>
-											<tbody>
-												<tr>
-													<td>TA &#38; Course Creator</td>
-													<td>Served as the TA for and helped create CS 378: Safe and Ethical Artificial Intelligence</td>
-													<td>2022</td>
-												</tr>
-												<tr>
-													<td>NeurIPS</td>
-													<td>Served as a reviewer for NeurIPS</td>
-													<td>2022</td>
-												</tr>
-												<tr>
-													<td>TEROS</td>
-													<td>Served as the co-organizer for the inaugural <a href="https://teros-texas.github.io">Texas Regional Robotics Symposium (TEROS)</a></td>
-													<td>2022</td>
-												</tr>
-												<tr>
-													<td>Admissions</td>
-													<td>Reviewed M.A. applications for the 2021-22 admissions cycle</td>
-													<td>2021</td>
-												</tr>
-												<tr>
-													<td>TA &#38; Course Creator</td>
-													<td>Served as the TA for and helped create CS 378: Safe and Ethical Artificial Intelligence</td>
-													<td>2021</td>
-												</tr>
-												<tr>
-													<td>Admissions</td>
-													<td>Reviewed Ph.D. applications for the 2020-21 admissions cycle</td>
-													<td>2020</td>
-												</tr>
-												<tr>
-													<td>GRACS</td>
-													<td>Elected to serve on the Graduate Representative Association of Computer Sciences</td>
-													<td>2020</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</footer>
-								
-
-								
-							</section>
-
+			<!-- Get Started -->
+			<section id="service" class="main special">
+				<header class="major">
+					<h2>Service</h2>
+					<p>I am proud to lend a hand when I can</p>
+				</header>
+				<footer>
+					<div class="table-wrapper">
+						<table>
+							<tbody>
+								<tr>
+									<td>Course Instructor</td>
+									<td>Taught Safe and Trustworthy ML: a course I co-developed with Swarat Chaudhuri
+										teaching mathematical foundations and principles of safe and Trustworthy machine
+										learning</td>
+									<td>2024</td>
+								</tr>
+								<tr>
+									<td>TA &#38; Course Creator</td>
+									<td>Served as the TA for and helped create CS 378: Safe and Ethical Artificial
+										Intelligence</td>
+									<td>2023</td>
+								</tr>
+								<tr>
+									<td>TA &#38; Course Creator</td>
+									<td>Served as the TA for and helped create CS 378: Safe and Ethical Artificial
+										Intelligence</td>
+									<td>2022</td>
+								</tr>
+								<tr>
+									<td>NeurIPS</td>
+									<td>Served as a reviewer for NeurIPS</td>
+									<td>2022</td>
+								</tr>
+								<tr>
+									<td>TEROS</td>
+									<td>Served as the co-organizer for the inaugural <a
+											href="https://teros-texas.github.io">Texas Regional Robotics Symposium
+											(TEROS)</a></td>
+									<td>2022</td>
+								</tr>
+								<tr>
+									<td>Admissions</td>
+									<td>Reviewed M.A. applications for the 2021-22 admissions cycle</td>
+									<td>2021</td>
+								</tr>
+								<tr>
+									<td>TA &#38; Course Creator</td>
+									<td>Served as the TA for and helped create CS 378: Safe and Ethical Artificial
+										Intelligence</td>
+									<td>2021</td>
+								</tr>
+								<tr>
+									<td>Admissions</td>
+									<td>Reviewed Ph.D. applications for the 2020-21 admissions cycle</td>
+									<td>2020</td>
+								</tr>
+								<tr>
+									<td>GRACS</td>
+									<td>Elected to serve on the Graduate Representative Association of Computer Sciences
+									</td>
+									<td>2020</td>
+								</tr>
+							</tbody>
+						</table>
 					</div>
+				</footer>
 
-				<!-- Footer -->
-				<footer id="footer">
-					<section>
-						<h2>Additional information</h2>
-						<ul class="actions">
-							<li><a href="https://www.cs.utexas.edu" class="button">CS @ UT</a></li>
-						</ul>
-					</section>
-					<section>
-						<!-- <h2>Etiam feugiat</h2> -->
-						<dl class="alt">
-							<!-- <dt>Address</dt>
+
+
+			</section>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<h2>Additional information</h2>
+				<ul class="actions">
+					<li><a href="https://www.sie.org" class="button">Shhh...</a></li>
+				</ul>
+			</section>
+			<section>
+				<!-- <h2>Etiam feugiat</h2> -->
+				<dl class="alt">
+					<!-- <dt>Address</dt>
 							<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
 							<dt>Phone</dt>
 							<dd>(000) 000-0000 x 0000</dd> -->
-							<dt>Email</dt>
-							<dd><a>jbhoffman[at]utexas[dot]edu</a></dd>
-						</dl>
-						<ul class="icons">
-							<!-- <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+					<dt>Email</dt>
+					<dd><a>joshbhoffman[at]gmail[dot]com</a></dd>
+				</dl>
+				<ul class="icons">
+					<!-- <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
 							<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li> -->
-							<li><a href="https://www.instagram.com/jhoff26/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/jbhoffman613/" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-							<li><a href="https://scholar.google.com/citations?user=xsfh9f0AAAAJ&hl=en" class="icon brands fa-google alt"><span class="label">Dribbble</span></a></li>
-						</ul>
-					</section>
-					<p class="copyright">&copy; Joshua Hoffman. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-				</footer>
+					<!-- <li><a href="https://www.instagram.com/jhoff26/" class="icon brands fa-instagram alt"><span
+								class="label">Instagram</span></a></li> -->
+					<li><a href="https://github.com/jbhoffman613/" class="icon brands fa-github alt"><span
+								class="label">GitHub</span></a></li>
+					<li><a href="https://scholar.google.com/citations?user=xsfh9f0AAAAJ&hl=en"
+							class="icon brands fa-google alt"><span class="label">Dribbble</span></a></li>
+				</ul>
+			</section>
+			<p class="copyright">&copy; Joshua Hoffman. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
 
-			</div>
+	</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
+
 </html>
